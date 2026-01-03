@@ -155,7 +155,6 @@ export default function Check() {
   return (
     <AppShell title="Vehicle Check">
       <div className="grid grid-cols-12 gap-6">
-        {/* Left */}
         <div className="col-span-12 lg:col-span-5">
           <div className="bg-white rounded-2xl shadow-sm border p-6">
             <div className="text-sm font-semibold text-gray-700 mb-2">
@@ -189,7 +188,6 @@ export default function Check() {
               </button>
             </div>
 
-            {/* OCR Upload */}
             <div className="mt-4">
               <input
                 ref={fileRef}
@@ -215,7 +213,6 @@ export default function Check() {
           </div>
         </div>
 
-        {/* Right */}
         <div className="col-span-12 lg:col-span-7">
           <div className="bg-white rounded-2xl shadow-sm border p-6">
             <div className="text-sm font-semibold text-gray-700 mb-4">
