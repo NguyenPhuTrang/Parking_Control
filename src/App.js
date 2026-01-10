@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { getToken } from "./auth/auth";
 
 import Login from "./pages/Login";
+import Register from "./pages/Register"; 
 import Check from "./pages/Check";
 import History from "./pages/History";
 import Whitelist from "./pages/Whitelist";
@@ -16,7 +17,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Navigate to={token ? "/check" : "/login"} replace />} />
       <Route path="/login" element={<Login />} />
-
+      <Route path="/register" element={<Register />} />
       <Route
         element={
           <ProtectedRoute>
@@ -26,10 +27,10 @@ export default function App() {
       >
         <Route path="/check" element={<Check />} />
         <Route path="/history" element={<History />} />
-        <Route path="/whitelist" element={<Whitelist />} /> {/* ✅ STAFF vào xem được */}
+        <Route path="/whitelist" element={<Whitelist />} /> 
       </Route>
 
-      <Route path="*" element={<div className="p-6">404</div>} />
+      <Route path="*" element={<div className="p-6">404 - Page Not Found</div>} />
     </Routes>
   );
 }

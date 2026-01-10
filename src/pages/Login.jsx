@@ -166,7 +166,10 @@ export default function Login() {
           </button>
 
           <div className="text-xs text-gray-500 text-center mt-2">
-            Having trouble? Contact the administrator.
+            Don't have an account yet ?{" "}
+            <a href="/register" className="font-semibold text-blue-600 hover:underline">
+              Register now !
+            </a>
           </div>
         </form>
       </div>
